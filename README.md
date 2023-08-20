@@ -1,4 +1,6 @@
-### Tech-Genius 
+HR Administration System (Tech Genius)
+
+## Developer: Olwethu Theo Nyondo
 
 ## Getting Started
 
