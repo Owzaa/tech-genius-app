@@ -10,4 +10,5 @@ export const SidebarContainer = styled.aside<SidebarContainerProps>`
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow:1px 0px 10px 1px #333;
 `;

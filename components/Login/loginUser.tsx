@@ -37,9 +37,7 @@ function Copyright(props) {
     );
 }
 
-// TODO remove, this demo shouldn't need to reset the theme.
 
-const defaultTheme = createTheme();
 
 export default function SignIn() {
     const handleSubmit = event => {
@@ -52,27 +50,19 @@ export default function SignIn() {
     };
 
     return (
-        <ThemeProvider theme={defaultTheme}>
-            <Grid container component="main" sx={{ height: "100vh" }}>
+        
+            <Grid component="main" sx={{alignItems: "center", height: "100vh",width:"100wh" }}>
                 <CssBaseline />
                 <Grid
                     item
                     xs={false}
                     sm={4}
                     md={7}
-                    sx={{
-                        backgroundImage:
-                            "url(https://source.unsplash.com/random?wallpapers)",
-                        backgroundRepeat: "no-repeat",
-                        backgroundColor: t =>
-                            t.palette.mode === "light"
-                                ? t.palette.grey[50]
-                                : t.palette.grey[900],
-                        backgroundSize: "cover",
-                        backgroundPosition: "center"
+                    sx={{                 
+                     
                     }}
                 />
-                <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+                <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square>
                     <Box
                         sx={{
                             my: 8,
@@ -143,6 +133,6 @@ export default function SignIn() {
                     </Box>
                 </Grid>
             </Grid>
-        </ThemeProvider>
+        
     );
 }

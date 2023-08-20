@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/MenuItem"
-  ],
+, "pages/login.js", "components/FilterQuery/EmployeeQueryFilter.tsx"  ],
   "exclude": [
     "node_modules"
   ]

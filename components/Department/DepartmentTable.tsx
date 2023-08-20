@@ -100,6 +100,12 @@ interface HeadCell {
 
 const headCells: readonly HeadCell[] = [
     {
+        id: "action",
+        numeric: false,
+        disablePadding: true,
+        label: "Actions"
+    },
+    {
         id: "departmentName",
         numeric: false,
         disablePadding: true,

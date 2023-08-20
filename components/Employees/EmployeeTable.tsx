@@ -108,9 +108,15 @@ interface HeadCell {
 }
 
 const headCells: readonly HeadCell[] = [
+        {
+        id: "action",
+        numeric: false,
+        disablePadding: true,
+        label: "Actions"
+    },
     {
         id: "firstName",
-        numeric: false,
+        numeric: true,
         disablePadding: true,
         label: "First Name"
     },
@@ -187,7 +193,7 @@ function EnhancedTableHead(props: EnhancedTableProps) {
                         checked={rowCount > 0 && numSelected === rowCount}
                         onChange={onSelectAllClick}
                         inputProps={{
-                            "aria-label": "select all desserts"
+                            "aria-label": "select all Employees"
                         }}
                     />
                 </TableCell>
@@ -351,12 +357,12 @@ export default function EmployeeTable() {
     );
 
     return (
-        <Box sx={{ width: "content" }}>
+        <Box sx={{ width: "100%" }}>
             <Paper sx={{ width: "100%", mb: 2 }}>
                 <EnhancedTableToolbar numSelected={selected.length} />
                 <TableContainer>
                     <Table
-                        sx={{ minWidth: 750 }}
+                        sx={{ width: "100%" }}
                         aria-labelledby="tableTitle"
                         size={dense ? "small" : "medium"}
                     >
