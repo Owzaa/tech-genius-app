@@ -20,3 +20,16 @@ npm run dev
 4. Open http://localhost:3000 to view it in the browser.
 
 
+Back-end Server
+
+mongoDB Atlas
+
+Databases
+## employeeDB
+## departmentDB
+
+
+API Endpoints:
+
+## /api/employee
+## /api/department
