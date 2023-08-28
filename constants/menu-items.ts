@@ -28,7 +28,7 @@ const MENU_OPTIONS: MenuOption[] = [
       {
         name: "Create-Employee",
         icon: Person,
-        url: "/employees/create-new-employee"
+        url: "/createEmployee"
       }
     ]
   },

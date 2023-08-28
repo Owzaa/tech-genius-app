@@ -23,7 +23,7 @@ import { visuallyHidden } from "@mui/utils";
 import { IndexInfo } from "typescript";
 
 interface Data {
-    id: number,
+    id: typeof string,
     firstName: string,
     lastName: string,
     telephoneNumber: string,
@@ -33,7 +33,7 @@ interface Data {
 }
 
 function createData(
-    id: number,
+    id: string,
     firstName: string,
     lastName: string,
     telephoneNumber: string,
@@ -42,7 +42,8 @@ function createData(
     employeeStatus: boolean
 ): Data {
     return {
-        id,
+        
+        id:
         firstName,
         lastName,
         telephoneNumber,
@@ -102,14 +103,14 @@ function stableSort<T>(
 interface HeadCell {
 
     disablePadding: boolean;
-    id: typeof string;
+    id: typeof IndexedDB;
     label: string;
     numeric: boolean;
 }
 
 const headCells: readonly HeadCell[] = [
         {
-        id: "action",
+        id:"action",
         numeric: false,
         disablePadding: true,
         label: "Actions"

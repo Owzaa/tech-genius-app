@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/MenuItem"
-, "pages/login.js", "components/FilterQuery/EmployeeQueryFilter.tsx", "database/mongoDB.js", "database/employeeDB.js", "database/departmentDB.js", "pages/api/employee/employees.js"  ],
+, "pages/login.tsx", "components/FilterQuery/EmployeeQueryFilter.tsx", "database/mongoDB.js", "database/employeeDB.js", "database/departmentDB.js", "pages/api/employee/employees.js"  ],
   "exclude": [
     "node_modules"
   ]
